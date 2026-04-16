@@ -9,10 +9,10 @@ export default function About() {
                 <span style={{ display: 'inline-block', width: '8px', height: '8px', backgroundColor: 'var(--color-primary)', borderRadius: '50%' }}></span>
                 The Vanguard of Indian Compliance
               </div>
-              <h2 style={{ fontSize: '3.5rem', lineHeight: 1.1, letterSpacing: '-0.04em', marginBottom: '1.5rem', color: 'var(--color-dark)' }}>
+              <h2 style={{ fontSize: 'clamp(2.2rem, 7vw, 3.5rem)', lineHeight: 1.1, letterSpacing: '-0.04em', marginBottom: '1.5rem', color: 'var(--color-dark)' }}>
                  Architecting Financial <span style={{ color: 'var(--color-primary)' }}>Defense.</span>
               </h2>
-              <p style={{ fontSize: '1.15rem', color: 'var(--color-text-muted)', lineHeight: 1.6 }}>
+              <p style={{ fontSize: 'clamp(1rem, 4vw, 1.15rem)', color: 'var(--color-text-muted)', lineHeight: 1.6 }}>
                  TaxSafar was founded on a singular mathematical principle: to provide institutional-grade legal and financial shielding to India's fastest-growing enterprises. We don't just file taxes; we build fortifications around your capital.
               </p>
           </div>

@@ -8,10 +8,10 @@ export default function Contact() {
             
             {/* Left Box: Contact Info */}
             <div>
-               <h2 style={{ fontSize: '3.5rem', letterSpacing: '-0.04em', lineHeight: 1.1, color: 'var(--color-dark)', marginBottom: '1.5rem' }}>
+               <h2 style={{ fontSize: 'clamp(2.2rem, 7vw, 3.5rem)', letterSpacing: '-0.04em', lineHeight: 1.1, color: 'var(--color-dark)', marginBottom: '1.5rem' }}>
                   Secure your <br/><span style={{ color: 'var(--color-primary)' }}>corporate future.</span>
                </h2>
-               <p style={{ fontSize: '1.15rem', color: 'var(--color-text-muted)', marginBottom: '4rem', lineHeight: 1.6, maxWidth: '400px' }}>
+               <p style={{ fontSize: 'clamp(1rem, 4vw, 1.15rem)', color: 'var(--color-text-muted)', marginBottom: '4rem', lineHeight: 1.6, maxWidth: '400px' }}>
                   Our Tier-1 legal and accounting network is ready to architect your financial defense. Drop us a line to schedule an introductory consultation.
                </p>
 

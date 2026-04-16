@@ -51,7 +51,7 @@ const coreServices = [
 const ServiceCard = ({ srv }) => {
   const Icon = srv.icon;
   return (
-    <div className="card" style={{ width: '420px', flexShrink: 0, padding: '2.5rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', cursor: 'grab', backgroundColor: '#ffffff', boxShadow: '0 10px 25px rgba(0,0,0,0.03)' }}>
+    <div className="card" style={{ width: 'min(420px, 90vw)', flexShrink: 0, padding: '2.5rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', cursor: 'grab', backgroundColor: '#ffffff', boxShadow: '0 10px 25px rgba(0,0,0,0.03)' }}>
       <div style={{ width: '56px', height: '56px', borderRadius: '16px', background: '#e0f2fe', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem', color: 'var(--color-primary)' }}>
         <Icon size={28} strokeWidth={2} />
       </div>
@@ -131,7 +131,7 @@ export default function Services() {
             <a href="#company" className="btn btn-dark" style={{ padding: '0.875rem 2.2rem' }}>Meet the Partners</a>
           </div>
           
-          <div style={{ backgroundColor: '#0f172a', borderRadius: '24px', height: '500px', padding: '3.5rem', display: 'flex', flexDirection: 'column', position: 'relative', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(15,23,42,0.4)' }}>
+          <div style={{ backgroundColor: '#0f172a', borderRadius: '24px', minHeight: '500px', height: 'auto', padding: '3.5rem', display: 'flex', flexDirection: 'column', position: 'relative', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(15,23,42,0.4)' }}>
               <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundImage: 'radial-gradient(#334155 1px, transparent 1px)', backgroundSize: '24px 24px', opacity: 0.25 }}></div>
               
               <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>

@@ -13,11 +13,11 @@ export default function Hero({ setPage }) {
                     India's Certified Financial Infrastructure
                     </div>
                     
-                    <h1 style={{ fontSize: '4.5rem', lineHeight: 1.1, letterSpacing: '-0.04em', marginBottom: '2rem', color: 'var(--color-dark)', fontWeight: 900 }}>
+                    <h1 style={{ fontSize: 'clamp(2.5rem, 8vw, 4.5rem)', lineHeight: 1.1, letterSpacing: '-0.04em', marginBottom: '2rem', color: 'var(--color-dark)', fontWeight: 900 }}>
                     Precision Compliance. <br/> <span style={{ color: 'var(--color-primary)' }}>Unrivaled Scale.</span>
                     </h1>
                     
-                    <p style={{ fontSize: '1.2rem', color: 'var(--color-text-muted)', marginBottom: '3.5rem', lineHeight: 1.6, maxWidth: '550px' }}>
+                    <p style={{ fontSize: 'clamp(1rem, 4vw, 1.2rem)', color: 'var(--color-text-muted)', marginBottom: '3.5rem', lineHeight: 1.6, maxWidth: '550px' }}>
                     A powerful fusion of top-tier legal defense, flawless corporate tax return filing, and institutional accounting. Everything required to scale your business.
                     </p>
                     
