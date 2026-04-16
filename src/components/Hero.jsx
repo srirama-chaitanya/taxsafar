@@ -4,7 +4,7 @@ export default function Hero({ setPage }) {
   return (
     <section style={{ paddingTop: '7rem', paddingBottom: '7rem', backgroundColor: 'var(--color-bg)', overflow: 'hidden' }}>
       <div className="container">
-        <div style={{ display: 'grid', gridTemplateColumns: '1.1fr 1.1fr', gap: '5rem', alignItems: 'center' }}>
+        <div className="grid-2">
             
             {/* Left Content */}
             <div style={{ textAlign: 'left' }}>

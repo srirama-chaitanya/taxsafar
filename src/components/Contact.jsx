@@ -53,7 +53,7 @@ export default function Contact() {
                <h3 style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--color-dark)', marginBottom: '2rem' }}>Request Consultation</h3>
                
                <form style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }} onSubmit={e => e.preventDefault()}>
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+                  <div className="grid-2" style={{ gap: '1.5rem', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))' }}>
                       <div className="input-group">
                           <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.5rem', color: 'var(--color-text)' }}>First Name</label>
                           <input type="text" placeholder="John" className="auth-input" style={{ width: '100%', paddingLeft: '1.25rem' }} />

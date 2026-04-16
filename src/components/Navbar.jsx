@@ -6,7 +6,7 @@ export default function Navbar({ setPage }) {
           TAX<span style={{ color: 'var(--color-primary)' }}>safar</span>
         </a>
         
-        <nav style={{ display: 'flex', gap: '2.5rem', fontWeight: 500, fontSize: '0.9rem', color: 'var(--color-text-muted)' }}>
+        <nav className="hide-mobile" style={{ display: 'flex', gap: '2.5rem', fontWeight: 500, fontSize: '0.9rem', color: 'var(--color-text-muted)' }}>
           <a href="#" onClick={(e) => { e.preventDefault(); setPage('home'); window.scrollTo(0,0); }} style={{ color: 'var(--color-text)' }}>Home</a>
           <a href="#about" onClick={(e) => { if(window.location.hash.includes('signup') || window.location.hash.includes('login')) { setPage('home'); setTimeout(() => { window.location.hash = '#about' }, 100); } }}>About</a>
           <a href="#services" onClick={(e) => { if(window.location.hash.includes('signup') || window.location.hash.includes('login')) { setPage('home'); setTimeout(() => { window.location.hash = '#services' }, 100); } }}>Services</a>
@@ -14,8 +14,8 @@ export default function Navbar({ setPage }) {
         </nav>
         
         <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-          <button onClick={() => setPage('signup')} style={{ background: 'transparent', border: 'none', fontWeight: 600, fontSize: '0.9rem', color: 'var(--color-dark)', marginRight: '1rem', cursor: 'pointer' }}>Create Account</button>
-          <button className="btn btn-dark" onClick={() => setPage('login')}>Login to Portal</button>
+          <button className="hide-mobile" onClick={() => setPage('signup')} style={{ background: 'transparent', border: 'none', fontWeight: 600, fontSize: '0.9rem', color: 'var(--color-dark)', marginRight: '1rem', cursor: 'pointer' }}>Create Account</button>
+          <button className="btn btn-dark" onClick={() => setPage('login')}>Login</button>
         </div>
       </div>
     </header>

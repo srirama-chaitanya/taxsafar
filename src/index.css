@@ -60,12 +60,19 @@ a { text-decoration: none; color: inherit; transition: color 0.2s ease; }
 
 /* Grids */
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
-.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 5rem; align-items: center; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 4rem; align-items: center; }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
+  .grid-2 { gap: 2rem; }
+  h1 { font-size: 3.5rem !important; }
+}
+
+@media (max-width: 800px) {
   .grid-3 { grid-template-columns: 1fr; }
-  .grid-2 { grid-template-columns: 1fr; }
-  .section { padding: 5rem 0; }
+  .grid-2 { grid-template-columns: 1fr; gap: 3rem; }
+  .section { padding: 4rem 0; }
+  h1 { font-size: 2.8rem !important; }
+  h2 { font-size: 2rem !important; }
 }
 
 /* Auth Specifics */
@@ -94,6 +101,11 @@ a { text-decoration: none; color: inherit; transition: color 0.2s ease; }
   background: #ffffff;
   box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.15);
 }
+.hide-mobile { display: block; }
+@media (max-width: 800px) {
+  .hide-mobile { display: none !important; }
+}
+
 .auth-input::placeholder {
   color: #94a3b8;
   font-weight: 400;

@@ -17,7 +17,7 @@ export default function About() {
               </p>
           </div>
 
-          <div className="grid-2" style={{ gap: '6rem', alignItems: 'center' }}>
+          <div className="grid-2" style={{ alignItems: 'center' }}>
              <div style={{ textAlign: 'left' }}>
                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem', color: 'var(--color-primary)', fontWeight: 700, fontSize: '0.9rem', letterSpacing: '1px', textTransform: 'uppercase' }}>
                      Our Foundation
@@ -41,19 +41,19 @@ export default function About() {
              </div>
              
              {/* Classy Corporate Photography Block */}
-             <div style={{ position: 'relative', borderRadius: '32px', overflow: 'hidden', boxShadow: '0 25px 60px -12px rgba(0,0,0,0.3)', height: '620px' }}>
-                 <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80" alt="Corporate Headquarters" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+             <div style={{ position: 'relative', borderRadius: '32px', overflow: 'hidden', boxShadow: '0 25px 60px -12px rgba(0,0,0,0.3)', minHeight: '400px' }}>
+                 <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80" alt="Corporate Headquarters" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0 }} />
                  
                  {/* Bottom Information overlay */}
-                 <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '6rem 2.5rem 2.5rem', background: 'linear-gradient(to top, rgba(15,23,42,0.95), rgba(15,23,42,0.6) 60%, transparent)' }}>
-                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
-                         <div style={{ background: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', padding: '1.5rem', borderRadius: '20px', border: '1px solid rgba(255,255,255,0.2)' }}>
-                             <div style={{ color: '#e2e8f0', fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Assets Protected</div>
-                             <div style={{ color: 'white', fontSize: '2.2rem', fontWeight: 800, letterSpacing: '-1px' }}>₹4.2K Cr</div>
+                 <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '4rem 1.5rem 1.5rem', background: 'linear-gradient(to top, rgba(15,23,42,0.95), rgba(15,23,42,0.6) 60%, transparent)', zIndex: 1 }}>
+                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                         <div style={{ background: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', padding: '1rem', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.2)' }}>
+                             <div style={{ color: '#e2e8f0', fontSize: '0.75rem', fontWeight: 600, marginBottom: '0.3rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Assets Protected</div>
+                             <div style={{ color: 'white', fontSize: '1.5rem', fontWeight: 800, letterSpacing: '-0.5px' }}>₹4.2K Cr</div>
                          </div>
-                         <div style={{ background: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', padding: '1.5rem', borderRadius: '20px', border: '1px solid rgba(255,255,255,0.2)' }}>
-                             <div style={{ color: '#e2e8f0', fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Legal Network</div>
-                             <div style={{ color: 'white', fontSize: '2.2rem', fontWeight: 800, letterSpacing: '-1px' }}>Tier-1</div>
+                         <div style={{ background: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', padding: '1rem', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.2)' }}>
+                             <div style={{ color: '#e2e8f0', fontSize: '0.75rem', fontWeight: 600, marginBottom: '0.3rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Legal Network</div>
+                             <div style={{ color: 'white', fontSize: '1.5rem', fontWeight: 800, letterSpacing: '-0.5px' }}>Tier-1</div>
                          </div>
                      </div>
                  </div>
