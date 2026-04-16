@@ -136,3 +136,41 @@ a { text-decoration: none; color: inherit; transition: color 0.2s ease; }
   color: #94a3b8;
   font-weight: 400;
 }
+
+/* Component-Specific Mobile Overrides */
+@media (max-width: 800px) {
+  /* Services Security Block */
+  .security-grid {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .security-visual {
+    order: -1;
+    min-height: 400px !important;
+    padding: 2rem !important;
+  }
+  .security-content .btn {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  /* Contact Layout */
+  .contact-grid {
+    gap: 3rem !important;
+  }
+  .contact-info {
+    gap: 1.5rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .contact-info-item {
+    gap: 1rem !important;
+  }
+  .contact-info-item .icon-box {
+    width: 48px !important;
+    height: 48px !important;
+  }
+  .contact-form-box {
+    padding: 1.75rem !important;
+    border-radius: 20px !important;
+  }
+}

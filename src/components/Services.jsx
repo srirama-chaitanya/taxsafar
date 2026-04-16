@@ -119,8 +119,8 @@ export default function Services() {
 
       <div className="container">
         {/* The Security Sub-Section */}
-        <div className="grid-2" style={{ marginTop: '10rem' }}>
-          <div>
+        <div className="grid-2 security-grid" style={{ marginTop: '10rem' }}>
+          <div className="security-content">
             <h3 style={{ fontSize: '2.5rem', lineHeight: 1.2, marginBottom: '1rem', color: 'var(--color-dark)' }}>Expertise backed by <br/>decades of litigation.</h3>
             <p style={{ color: 'var(--color-text-muted)', marginBottom: '2rem' }}>We operate a dense network of former tax adjudicators and senior legal counsel to defend your capital.</p>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '3rem', color: 'var(--color-text-muted)' }}>
@@ -131,7 +131,7 @@ export default function Services() {
             <a href="#company" className="btn btn-dark" style={{ padding: '0.875rem 2.2rem' }}>Meet the Partners</a>
           </div>
           
-          <div style={{ backgroundColor: '#0f172a', borderRadius: '24px', minHeight: '500px', height: 'auto', padding: '3.5rem', display: 'flex', flexDirection: 'column', position: 'relative', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(15,23,42,0.4)' }}>
+          <div className="security-visual" style={{ backgroundColor: '#0f172a', borderRadius: '24px', minHeight: '500px', height: 'auto', padding: '3.5rem', display: 'flex', flexDirection: 'column', position: 'relative', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(15,23,42,0.4)' }}>
               <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundImage: 'radial-gradient(#334155 1px, transparent 1px)', backgroundSize: '24px 24px', opacity: 0.25 }}></div>
               
               <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>

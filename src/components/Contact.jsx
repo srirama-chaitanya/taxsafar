@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section id="contact" style={{ padding: '8rem 0', backgroundColor: '#ffffff', borderTop: '1px solid var(--color-border)' }}>
       <div className="container">
-         <div className="grid-2" style={{ alignItems: 'flex-start', gap: '6rem' }}>
+         <div className="grid-2 contact-grid" style={{ alignItems: 'flex-start', gap: '6rem' }}>
             
             {/* Left Box: Contact Info */}
             <div>
@@ -15,9 +15,9 @@ export default function Contact() {
                   Our Tier-1 legal and accounting network is ready to architect your financial defense. Drop us a line to schedule an introductory consultation.
                </p>
 
-               <div style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
-                   <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
-                       <div style={{ width: '64px', height: '64px', borderRadius: '50%', border: '1px solid var(--color-border)', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#f8fafc' }}>
+               <div className="contact-info" style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
+                   <div className="contact-info-item" style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
+                       <div className="icon-box" style={{ width: '64px', height: '64px', borderRadius: '50%', border: '1px solid var(--color-border)', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#f8fafc' }}>
                            <Mail color="var(--color-dark)" size={24} />
                        </div>
                        <div>
@@ -26,8 +26,8 @@ export default function Contact() {
                        </div>
                    </div>
                    
-                   <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
-                       <div style={{ width: '64px', height: '64px', borderRadius: '50%', border: '1px solid var(--color-border)', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#f8fafc' }}>
+                   <div className="contact-info-item" style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
+                       <div className="icon-box" style={{ width: '64px', height: '64px', borderRadius: '50%', border: '1px solid var(--color-border)', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#f8fafc' }}>
                            <Phone color="var(--color-dark)" size={24} />
                        </div>
                        <div>
@@ -36,8 +36,8 @@ export default function Contact() {
                        </div>
                    </div>
 
-                   <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
-                       <div style={{ width: '64px', height: '64px', borderRadius: '50%', border: '1px solid var(--color-border)', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#f8fafc' }}>
+                   <div className="contact-info-item" style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
+                       <div className="icon-box" style={{ width: '64px', height: '64px', borderRadius: '50%', border: '1px solid var(--color-border)', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#f8fafc' }}>
                            <MapPin color="var(--color-dark)" size={24} />
                        </div>
                        <div>
@@ -49,7 +49,7 @@ export default function Contact() {
             </div>
 
             {/* Right Box: Consultation Form */}
-            <div style={{ backgroundColor: 'var(--color-surface)', padding: '3.5rem', borderRadius: '32px', border: '1px solid var(--color-border)', boxShadow: '0 25px 50px -12px rgba(0,0,0,0.05)' }}>
+            <div className="contact-form-box" style={{ backgroundColor: 'var(--color-surface)', padding: '3.5rem', borderRadius: '32px', border: '1px solid var(--color-border)', boxShadow: '0 25px 50px -12px rgba(0,0,0,0.05)' }}>
                <h3 style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--color-dark)', marginBottom: '2rem' }}>Request Consultation</h3>
                
                <form style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }} onSubmit={e => e.preventDefault()}>
