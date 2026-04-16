@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero({ setPage }) {
   return (
-    <section style={{ paddingTop: '10rem', paddingBottom: '8rem', backgroundColor: 'var(--color-bg)', overflow: 'hidden' }}>
+    <section style={{ paddingTop: '7rem', paddingBottom: '7rem', backgroundColor: 'var(--color-bg)', overflow: 'hidden' }}>
       <div className="container">
         <div style={{ display: 'grid', gridTemplateColumns: '1.1fr 1.1fr', gap: '5rem', alignItems: 'center' }}>
             
