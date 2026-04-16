@@ -18,7 +18,7 @@
 
 html, body { 
   overflow-x: hidden; 
-  width: 100vw;
+  width: 100%;
   scroll-behavior: smooth; 
 }
 
@@ -28,6 +28,28 @@ body {
   color: var(--color-text);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+@media (max-width: 600px) {
+  .btn-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .btn-group .btn {
+    width: 100%;
+  }
 }
 
 h1, h2, h3, h4 { color: var(--color-text); letter-spacing: -0.02em; font-weight: 700; }

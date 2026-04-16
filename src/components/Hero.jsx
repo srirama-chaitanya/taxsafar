@@ -21,9 +21,9 @@ export default function Hero({ setPage }) {
                     A powerful fusion of top-tier legal defense, flawless corporate tax return filing, and institutional accounting. Everything required to scale your business.
                     </p>
                     
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
+                    <div className="btn-group">
                         <button className="btn btn-dark" onClick={() => setPage && setPage('signup')} style={{ padding: '1.1rem 2.4rem', fontSize: '1.05rem', fontWeight: 700, borderRadius: '16px' }}>Schedule Consultation</button>
-                        <a className="btn btn-outline" href="#services" style={{ padding: '1.1rem 2.4rem', fontSize: '1.05rem', fontWeight: 700, borderRadius: '16px' }}>View Services</a>
+                        <a className="btn btn-outline" href="#services" style={{ padding: '1.1rem 2.4rem', fontSize: '1.05rem', fontWeight: 700, borderRadius: '16px', textAlign: 'center' }}>View Services</a>
                     </div>
                 </motion.div>
             </div>
